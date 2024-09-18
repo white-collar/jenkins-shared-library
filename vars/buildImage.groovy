@@ -1,5 +1,4 @@
 #!/usr/bin/env groovy
-
 import com.example
 
 def call(String imageName) {
