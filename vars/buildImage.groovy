@@ -1,5 +1,6 @@
 #!/usr/bin/env groovy
-//import com.example.Docker
+
+import com.example.Docker
 
 def call(String imageName) {
     // echo "building the docker image ..."
@@ -9,8 +10,8 @@ def call(String imageName) {
     //     sh "docker push $imageName"
     // }
 
-    def docker = new com.example.Docker()
-    docker..buildDockerImage(imageName)
+    def docker = new Docker()
+    docker.buildDockerImage(imageName)
 
     //return new Docker(this).buildDockerImage(imageName)
 }
